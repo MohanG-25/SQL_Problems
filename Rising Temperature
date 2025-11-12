@@ -1,0 +1,2 @@
+select w.id as id from Weather as w join Weather as v  on w.recordDate=v.recordDate + Interval '1 day' 
+where w.temperature > v.temperature;
