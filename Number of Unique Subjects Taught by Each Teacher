@@ -1,0 +1,2 @@
+select a.teacher_id,count(distinct b.subject_id) as cnt from Teacher as a join
+Teacher as b on a.teacher_id=b.teacher_id group by a.teacher_id;
