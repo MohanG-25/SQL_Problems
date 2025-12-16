@@ -1,0 +1,2 @@
+select e.name from Employee as e 
+where 5 <= (select count(*) from Employee where e.id=managerId);
